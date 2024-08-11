@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app  # PYTHONPATH 설정
+    volumes:
+      - ./models:/models  # 모델 공유를 위한 볼륨 마운트
+
+
+# services:
+#   app:
+#     build:
+#       context: .
+#       dockerfile: dockerfile
+#     ports:
+#       - "8000:8000"
+#     volumes:
+#       - ./models:/models 
+#     depends_on:
+#       - test
+
+#   test:
+#     build:
+#       context: .
+#       dockerfile: dockerfile.test
+#     volumes:
+#       - ./models:/models
+#     command: pytest 

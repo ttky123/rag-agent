@@ -1,0 +1,19 @@
+langchain
+langchain-community
+transformers
+faiss-cpu
+fastapi
+uvicorn
+pydantic
+torch
+sentence-transformers
+accelerate
+pypdf
+jinja2
+pytest
+pytest-asyncio  # 동시성을 위해 추가
+httpx
+asyncio
+starlette
+itsdangerous
+llama-cpp-python
