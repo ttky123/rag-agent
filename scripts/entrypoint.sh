@@ -12,4 +12,5 @@ if [ $TEST_RESULT -ne 0 ]; then
 else
   echo "Tests passed. Starting the app."
   exec uvicorn main:app --host 0.0.0.0 --port 8000 --log-level debug
+  #exec gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --log-level debug
 fi

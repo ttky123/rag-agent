@@ -6,11 +6,20 @@ services:
       context: .
       dockerfile: dockerfile
     ports:
-      - "8000:8000"
+      - "48000:8000"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1  # Number of GPUs to use
+              capabilities: [gpu]
     environment:
-      - PYTHONPATH=/app  # PYTHONPATH 설정
+      - PYTHONPATH=/app # PYTHONPATH 설정
+      - NVIDIA_VISIBLE_DEVICES=all  
     volumes:
       - ./models:/models  # 모델 공유를 위한 볼륨 마운트
+    runtime: nvidia
 
 
 # services:

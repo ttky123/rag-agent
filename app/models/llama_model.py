@@ -7,7 +7,7 @@ def load_model(model_id: str, model_path: str) -> Llama:
         tokenizer = AutoTokenizer.from_pretrained(model_id)
         model = Llama(
             model_path=model_path,
-            n_ctx=512,
+            n_ctx=1024,
             n_gpu_layers=-1
         )
         return tokenizer, model
