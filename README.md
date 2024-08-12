@@ -25,29 +25,29 @@ rag-agent
 │ ├── main.py : FastAPI 앱       
 │ ├── models   
 │ │ ├── init.py   
-│ │ └── llama_model.py : 모델 로드 및 초기화 코드   
-│ ├── routes   
-│ │ ├── init.py   
-│ │ └── query_route.py : API 요청 경로 및 핸들러   
-│ ├── services   
-│ │ ├── init.py   
-│ │ └── response_generator.py : 응답 생성 로직   
-│ ├── templates   
-│ │ └── index.html : 테스트용 웹페이지 탬플릿
-│ └── utils   
-│ ├── init.py   
-│ └── document_loader.py : Retrieval을 위한 문서 처리 util   
-├── docker-compose.yml : Docker Compose 설정 파일   
-├── Dockerfile : Docker 이미지 빌드 파일   
-├── scripts   
-│ └── entrypoint.sh : Pytest + Docker 컨테이너 시작 스크립트   
-├── models : 모델을 저장하는 디렉토리
-├── README.md    
-├── requirements.txt    
-└── tests   
-├── init.py   
-├── test_api.py : API 테스트코드   
-└── test_response_gen.py : 응답 생성 로직 테스트코드   
+│ │ └── llama_model.py : 모델 로드 및 초기화 코드      
+│ ├── routes    
+│ │ ├── init.py        
+│ │ └── query_route.py : API 요청 경로 및 핸들러       
+│ ├── services      
+│ │ ├── init.py      
+│ │ └── response_generator.py : 응답 생성 로직       
+│ ├── templates      
+│ │ └── index.html : 테스트용 웹페이지 탬플릿       
+│ └── utils        
+│ ├── init.py        
+│ └── document_loader.py : Retrieval을 위한 문서 처리 util       
+├── docker-compose.yml : Docker Compose 설정 파일       
+├── Dockerfile : Docker 이미지 빌드 파일       
+├── scripts       
+│ └── entrypoint.sh : Pytest + Docker 컨테이너 시작 스크립트       
+├── models : 모델을 저장하는 디렉토리        
+├── README.md       
+├── requirements.txt         
+└── tests        
+├── init.py       
+├── test_api.py : API 테스트코드       
+└── test_response_gen.py : 응답 생성 로직 테스트코드       
 ---
 
 ## 주요 모듈 설명
