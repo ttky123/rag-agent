@@ -80,7 +80,7 @@ PDF 형식의 문서를 로드하고 벡터화하여 임베딩 생성
 
 - **Docker** , **Docker Compose**
 - **Python 3.10+**
-- **Nvidia GOPU Driver + CUDA**
+- **Nvidia GPU Driver + CUDA**
 
 ### 설치 및 실행
 - docker-compose build
