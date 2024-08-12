@@ -36,7 +36,7 @@ rag-agent
 │ │ └── index.html : 테스트용 웹페이지 탬플릿
 │ └── utils   
 │ ├── init.py   
-│ └── document_loader.py : Retrieval을 위한 문서 처리 util
+│ └── document_loader.py : Retrieval을 위한 문서 처리 util   
 ├── docker-compose.yml : Docker Compose 설정 파일   
 ├── Dockerfile : Docker 이미지 빌드 파일   
 ├── scripts   
