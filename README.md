@@ -1,39 +1,38 @@
 # rag-agent
 LLama 기반 RAG를 구현해보는 프로젝트입니다.
-_____________________________________________________
-rag-agent
-├── app
-│   ├── data
-│   │   ├── api_spec.pdf
-│   │   └── guide.pdf
-│   ├── __init__.py
-│   ├── main.py
-│   ├── models
-│   │   ├── __init__.py
-│   │   └── llama_model.py
-│   ├── routes
-│   │   ├── __init__.py
-│   │   └── query_route.py
-│   ├── services
-│   │   ├── __init__.py
-│   │   └── response_generator.py
-│   ├── templates
-│   │   └── index.html
-│   └── utils
-│       ├── document_loader.py
-│       └── __init__.py
-├── docker-compose.yml
-├── dockerfile
-├── dockerfile.test
-├── entrypoint.sh
-├── __init__.py
-├── models
-├── README.md
-├── requirements.txt
-├── scripts
-│   └── entrypoint.sh
-└── tests
-    ├── __init__.py
-    ├── test_api.py
-    └── test_response_gen.py
-___________________________________________________
+
+rag-agent <br/>
+├── app <br/>
+│   ├── data <br/>
+│   │   ├── api_spec.pdf <br/>
+│   │   └── guide.pdf <br/>
+│   ├── __init__.py <br/>
+│   ├── main.py <br/>
+│   ├── models <br/>
+│   │   ├── __init__.py <br/>
+│   │   └── llama_model.py <br/>
+│   ├── routes <br/>
+│   │   ├── __init__.py <br/>
+│   │   └── query_route.py <br/>
+│   ├── services <br/>
+│   │   ├── __init__.py <br/>
+│   │   └── response_generator.py <br/>
+│   ├── templates <br/>
+│   │   └── index.html <br/>
+│   └── utils <br/>
+│       ├── document_loader.py <br/>
+│       └── __init__.py <br/>
+├── docker-compose.yml <br/>
+├── dockerfile <br/>
+├── dockerfile.test <br/>
+├── entrypoint.sh <br/>
+├── __init__.py <br/>
+├── models <br/>
+├── README.md <br/>
+├── requirements.txt <br/>
+├── scripts <br/>
+│   └── entrypoint.sh <br/>
+└── tests <br/>
+    ├── __init__.py <br/>
+    ├── test_api.py <br/>
+    └── test_response_gen.py <br/>
