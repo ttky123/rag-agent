@@ -4,7 +4,6 @@ from app.main import app
 import os
 os.environ["ENV"] = "test"
 # TestClient 초기화
-#client = TestClient(app, cookies={"session_id": "test-session-id"}, raise_server_exceptions=True)
 client = TestClient(app)
 
 def test_read_root():

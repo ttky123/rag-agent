@@ -44,7 +44,7 @@ async def ask_question(request: Request, query: Query):
         # 전체 context와 검색된 내용을 결합
         combined_context = f"{context}\n{full_context}"
 
-        # 비동기 모델 인퍼런스 수행
+        # 비동기 모델 인퍼런스
         result = await generate_response(combined_context, query.question)
 
         if os.getenv("ENV") != "test":
@@ -55,35 +55,3 @@ async def ask_question(request: Request, query: Query):
     except Exception as e:
         logging.exception("Exception occurred during generation: " + str(e))
         raise HTTPException(status_code=500, detail=str(e))
-
-
-# from fastapi import APIRouter, HTTPException
-# from pydantic import BaseModel
-# from services.response_generator import generate_response
-# from utils.document_loader import load_documents
-# import logging
-# import uuid
-# router = APIRouter()
-
-
-# class Query(BaseModel):
-#     question : str
-    
-    
-# vectorstore= load_documents()
-
-
-# @router.post("/ask")
-# async def ask_question(query: Query):
-#     try:
-#         # Use invoke to retrieve documents
-#         retriever = vectorstore.as_retriever()
-#         docs = retriever.invoke(query.question)
-#         context = docs[0].page_content if docs else ""
-
-#         result = await generate_response(context,query.question)
-#         return{"answer" : result}
-    
-#     except Exception as e:
-#         logging.exception("Exception Occured during generation" + {str(e)})
-#         raise HTTPException(status_code=500, detail = str(e))

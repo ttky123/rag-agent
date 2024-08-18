@@ -19,13 +19,7 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt 
-    # && pip install --no-cache-dir \
-    # llama-cpp-python \
-    # transformers \
-    # fastapi \
-    # uvicorn \
-    # jinja2 \
-    # pytest
+
 
 
 RUN huggingface-cli login --token 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
